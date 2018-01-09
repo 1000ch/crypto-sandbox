@@ -3,19 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>encrypto-sandbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/9.6.0/build.css">
   </head>
   <body>
-    <div>
-      <h2>public key</h2>
-      <textarea id="key" placeholder="base64 encoded public key"></textarea>
-    </div>
-    <div>
-      <h2>input</h2>
-      <textarea id="input"></textarea>
-    </div>
-    <div>
-      <h2>output</h2>
-      <textarea id="output" readonly></textarea>
+    <div class="container">
+      <form>
+        <dl class="form-group">
+          <dt>
+            <label>public key</label>
+          </dt>
+          <dd>
+            <textarea id="key" class="form-control" placeholder="base64 encoded public key"></textarea>
+          </dd>
+        </dl>
+        <dl class="form-group">
+          <dt>
+            <label>input</label>
+          </dt>
+          <dd>
+            <textarea id="input" class="form-control"></textarea>
+          </dd>
+        </dl>
+        <dl class="form-group">
+          <dt>
+            <label>output</label>
+          </dt>
+          <dd>
+            <textarea id="output" class="form-control" readonly></textarea>
+          </dd>
+        </dl>
+      </form>
     </div>
     <script type="module" src="app.js"></script>
   </body>
