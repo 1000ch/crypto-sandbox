@@ -2,38 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>encrypto-sandbox</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/9.6.0/build.css">
+    <link rel="stylesheet" href="https://1000ch.github.io/gh-pages.css/gh-pages.css">
+    <style>
+      textarea {
+        width: 100%;
+        height: 12em;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <form>
-        <dl class="form-group">
-          <dt>
-            <label>public key</label>
-          </dt>
-          <dd>
-            <textarea id="key" class="form-control" placeholder="base64 encoded public key"></textarea>
-          </dd>
-        </dl>
-        <dl class="form-group">
-          <dt>
-            <label>input</label>
-          </dt>
-          <dd>
-            <textarea id="input" class="form-control"></textarea>
-          </dd>
-        </dl>
-        <dl class="form-group">
-          <dt>
-            <label>output</label>
-          </dt>
-          <dd>
-            <textarea id="output" class="form-control" readonly></textarea>
-          </dd>
-        </dl>
-      </form>
+      <h2><label for="key">base64-encoded public key</label></h2>
+      <textarea id="key" placeholder="base64 encoded public key"></textarea>
+      <h2><label for="input">input</label></h2>
+      <textarea id="input"></textarea>
+      <h2><label for="output">output</label></h2>
+      <textarea id="output" class="form-control" readonly></textarea>
     </div>
     <script type="module" src="app.js"></script>
   </body>
